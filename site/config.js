@@ -7,9 +7,10 @@ window.SITE = {
   },
 
   contato: {
-    email: "eliaspereira@hotmail.com",
+    email: "", // destino configurado no servidor (jarvis-mail)
     // Opcional: chave do Web3Forms (https://web3forms.com). Se vazio, usa FormSubmit.
     web3formsChave: "",
+    endpoint: "/api/contato", // envio por SMTP no servidor; o e-mail de destino fica só lá
     assunto: "Novo contato pelo site JARVIS",
   },
 
