@@ -154,7 +154,10 @@
       delete dados._honey;
       const assunto = S.contato.assunto || `Novo contato pelo site ${S.nome || ""}`;
       let url, corpo;
-      if (S.contato.web3formsChave) {
+      if (S.contato.endpoint) {
+        url = S.contato.endpoint; // SMTP próprio (servidor do site)
+        corpo = { _assunto: assunto, ...dados };
+      } else if (S.contato.web3formsChave) {
         url = "https://api.web3forms.com/submit";
         corpo = { access_key: S.contato.web3formsChave, subject: assunto, from_name: S.nome, ...dados };
       } else {
@@ -171,7 +174,7 @@
           body: JSON.stringify(corpo),
         });
         const j = await r.json().catch(() => ({}));
-        if (!r.ok || j.success === false || j.success === "false") throw new Error(j.message || r.status);
+        if (!r.ok || j.ok === false || j.success === false || j.success === "false") throw new Error(j.message || r.status);
         form.reset();
         avisar("Recebemos seu contato. Em breve falamos com você.", "ok");
       } catch (e) {
