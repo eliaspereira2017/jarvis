@@ -1,0 +1,2 @@
+OK: 160 frames .webp (1920x1080) · desktop 23M · mobile 17M
+Em config.js → frames: { total: 160, desktop: "assets/frames/desktop/f_{n}.webp", mobile: "assets/frames/mobile/f_{n}.webp" }

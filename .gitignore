@@ -1,0 +1,4 @@
+.env
+*.key
+Thumbs.db
+.DS_Store

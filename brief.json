@@ -1,0 +1,13 @@
+{
+  "nome": "JARVIS",
+  "marca": "CGL System",
+  "descricao": "Assistente de IA pessoal (ex-Alfred Vision, renomeado Jarvis). Visão computacional, interpretação de tela, voz, memória, automação no-code, privacidade.",
+  "fonte_conteudo": "https://alfred.cglsystem.com.br/ (trocar Alfred por Jarvis)",
+  "cores": {"fundo": "#05080b", "texto": "#e8f0ee", "acento": "#00a859"},
+  "fontes": {"titulo": "Chakra Petch", "texto": "Manrope"},
+  "logo": {"escura": "fonte/logo-escura.png", "clara": "fonte/logo-clara.png"},
+  "whatsapp": "5518997981458",
+  "email": "eliaspereira@hotmail.com",
+  "oferta": {"preco": "R$ 399,00", "parcelado": "12x R$ 20,37", "avista": "R$ 197,00", "botao": "Garantir meu Jarvis"},
+  "conceito": "Barracão antigo por fora, oficina high-tech por dentro (KUKA, impressoras 3D, laser, ponte rolante, Maverick). Estilo Homem de Ferro."
+}
