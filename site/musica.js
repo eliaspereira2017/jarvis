@@ -4,7 +4,7 @@
   const botao = document.querySelector(".som");
   const splash = document.getElementById("splash");
   const entrar = document.getElementById("splash-botao");
-  const VOLUME = 0.06;
+  const VOLUME = 0.066;
   if (audio) audio.volume = VOLUME;
 
   const atualizar = () => {
